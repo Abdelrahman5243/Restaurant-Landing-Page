@@ -47,7 +47,7 @@ const Navbar = () => {
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="#Home">Home</a>
+        <a href="#Works">Works</a>
         <a href="#About">About</a>
         <a href="#Testimonials">Testimonials</a>
         <a href="#Contact">Contact</a>
