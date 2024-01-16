@@ -250,6 +250,7 @@ nav {
 }
 .testimonial-section-bottom img{
   border-radius: 50%;
+  width: 100px;
 }
 .testimonial-section-bottom p {
   font-weight: 700;
