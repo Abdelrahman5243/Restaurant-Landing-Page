@@ -294,11 +294,8 @@ nav {
   margin: 1rem 2rem;
   transition: 0.4s;
 }
-.work-section-info img{
-  transition: 0.4s;
-}
 .work-section-info:hover{
-  background: fe9e0d;
+  background: #fe9e0d;
   color: white;
 }
 .work-section-info:hover img{
