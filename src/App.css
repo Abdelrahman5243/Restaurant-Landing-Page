@@ -251,6 +251,8 @@ nav {
 .testimonial-section-bottom img{
   border-radius: 50%;
   width: 100px;
+  outline: solid 2px #fe9e0d;
+  outline-offset: 3px;
 }
 .testimonial-section-bottom p {
   font-weight: 700;
