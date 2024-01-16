@@ -76,7 +76,7 @@ const Navbar = () => {
 <List>
   {menuOptions.map((item) => (
     <ListItem key={item.text} disablePadding>
-      <a href={item.href}  style={{ textDecoration: 'none', color: 'inherit' , width:'100%'}}> 
+      <a href={item.href} style={{ textDecoration: 'none', color: 'inherit' , width:'100%'}}> 
         <ListItemButton>
           <ListItemIcon>{item.icon}</ListItemIcon>
           <ListItemText primary={item.text} />
