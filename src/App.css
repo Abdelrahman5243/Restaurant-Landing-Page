@@ -292,6 +292,17 @@ nav {
   border-radius: 1rem;
   color: #505050;
   margin: 1rem 2rem;
+  transition: 0.4s;
+}
+.work-section-info img{
+  transition: 0.4s;
+}
+.work-section-info:hover{
+  background: fe9e0d;
+  color: white;
+}
+.work-section-info:hover img{
+filter: brightness(80);
 }
 .work-section-info h2 {
   margin: 1rem 0rem;
