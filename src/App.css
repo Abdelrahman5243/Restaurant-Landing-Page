@@ -248,6 +248,9 @@ nav {
 .testimonial-section-bottom {
   margin: 2rem auto;
 }
+.testimonial-section-bottom img{
+  border-radius: 50%;
+}
 .testimonial-section-bottom p {
   font-weight: 700;
   color: #515151;
