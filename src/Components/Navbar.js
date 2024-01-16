@@ -74,14 +74,14 @@ const Navbar = () => {
           onKeyDown={() => setOpenMenu(false)}
         >
 <List>
-{menuOptions.map((item) => (
+  {menuOptions.map((item) => (
     <ListItem key={item.text} disablePadding>
-      <Link to={item.href} style={{ textDecoration: 'none', color: 'inherit' }}> 
+      <a href={item.href}  style={{ textDecoration: 'none', color: 'inherit' , width:'100%'}}> 
         <ListItemButton>
           <ListItemIcon>{item.icon}</ListItemIcon>
           <ListItemText primary={item.text} />
         </ListItemButton>
-      </Link>
+      </a>
     </ListItem>
   ))}
 </List>
