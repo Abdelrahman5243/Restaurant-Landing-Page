@@ -8,17 +8,17 @@ const Work = () => {
     {
       image: PickMeals,
       title: "Pick Meals",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+      text: "Select from a variety of fresh, flavorful dishes tailored to your taste.",
     },
     {
       image: ChooseMeals,
       title: "Choose How Often",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+      text: "Set your meal delivery schedule to daily, weekly, or monthly.",
     },
     {
       image: DeliveryMeals,
       title: "Fast Deliveries",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+      text: "Enjoy prompt delivery of your freshly prepared meals",
     },
   ];
   return (
