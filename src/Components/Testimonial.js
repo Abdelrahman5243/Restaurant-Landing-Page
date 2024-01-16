@@ -16,9 +16,8 @@ const Testimonial = () => {
       <div className="testimonial-section-bottom">
         <img src={ProfilePic} alt="" />
         <p>
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
-        </p>
+        Hear from our satisfied gourmands 
+        who’ve experienced the magic of our kitchen. Their stories are a testament to our dedication to culinary excellence and service.        </p>
         <div className="testimonials-stars-container">
           <AiFillStar />
           <AiFillStar />

@@ -27,9 +27,8 @@ const Work = () => {
         <p className="primary-subheading">Work</p>
         <h1 className="primary-heading">How It Works</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
-        </p>
+        Discover the simplicity of gourmet home cooking. Select your desired dishes, set your delivery frequency, and relish in swift,
+        steaming deliveries right to your doorstep.        </p>
       </div>
       <div className="work-section-bottom">
         {workInfoData.map((data) => (

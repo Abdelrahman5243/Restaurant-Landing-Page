@@ -18,12 +18,12 @@ const About = () => {
           Food Is An Important Part Of A Balanced Diet
         </h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+        The Cornerstone of Wellness Embark on a
+        gastronomic journey where taste meets health.
         </p>
         <p className="primary-text">
-          Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
-          facilisis at fringilla quam.
+        Our dishes are crafted to tantalize your taste buds while nourishing your body. 
+        Dive into a world where every bite is a step towards balance.
         </p>
         <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>
