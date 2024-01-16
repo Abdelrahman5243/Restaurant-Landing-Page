@@ -23,18 +23,22 @@ const Navbar = () => {
     {
       text: "Home",
       icon: <HomeIcon />,
+      href:"#Home"
     },
     {
       text: "About",
       icon: <InfoIcon />,
+      href:"#About"
     },
     {
       text: "Testimonials",
       icon: <CommentRoundedIcon />,
+      href:"#Testimonials"
     },
     {
       text: "Contact",
       icon: <PhoneRoundedIcon />,
+      href:"#Contact"
     },
     {
       text: "Cart",
@@ -66,16 +70,19 @@ const Navbar = () => {
           onClick={() => setOpenMenu(false)}
           onKeyDown={() => setOpenMenu(false)}
         >
-          <List>
-            {menuOptions.map((item) => (
-              <ListItem key={item.text} disablePadding>
-                <ListItemButton>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.text} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
+<List>
+  {menuOptions.map((item) => (
+    <ListItem key={item.text} disablePadding>
+      <a href={item.href}> 
+        <ListItemButton>
+          <ListItemIcon>{item.icon}</ListItemIcon>
+          <ListItemText primary={item.text} />
+        </ListItemButton>
+      </a>
+    </ListItem>
+  ))}
+</List>
+
           <Divider />
         </Box>
       </Drawer>
