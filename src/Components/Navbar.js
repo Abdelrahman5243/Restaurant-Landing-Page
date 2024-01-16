@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import Logo from "../Assets/Logo.svg";
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -43,6 +44,7 @@ const Navbar = () => {
     {
       text: "Cart",
       icon: <ShoppingCartRoundedIcon />,
+      href:""
     },
   ];
   return (
@@ -71,14 +73,14 @@ const Navbar = () => {
           onKeyDown={() => setOpenMenu(false)}
         >
 <List>
-  {menuOptions.map((item) => (
+{menuOptions.map((item) => (
     <ListItem key={item.text} disablePadding>
-      <a href={item.href}> 
+      <Link to={item.href} style={{ textDecoration: 'none', color: 'inherit' }}> 
         <ListItemButton>
           <ListItemIcon>{item.icon}</ListItemIcon>
           <ListItemText primary={item.text} />
         </ListItemButton>
-      </a>
+      </Link>
     </ListItem>
   ))}
 </List>
