@@ -44,13 +44,12 @@ const Navbar = () => {
     {
       text: "Cart",
       icon: <ShoppingCartRoundedIcon />,
-      href:""
+      href:"#ss"
     },
   ];
   return (
     <nav>
       <div className="nav-logo-container">
-        1213553
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
