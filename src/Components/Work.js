@@ -18,9 +18,7 @@ const Work = () => {
     const workSection = document.getElementById('Works');
     if (isElementInViewport(workSection)) {
       workSection.style.opacity = '1';
-    } else {
-      workSection.style.opacity = '0';
-    }
+    } 
   });
     
 
