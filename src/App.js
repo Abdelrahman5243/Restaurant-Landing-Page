@@ -11,9 +11,7 @@ import ScrollAnimation from "./Components/ScrollAnimation"
 function App() {
   return (
     <div className="App">
-<ScrollAnimation>
 <Home/>
-</ScrollAnimation>
 <ScrollAnimation>
 <About/>
 </ScrollAnimation>
@@ -26,9 +24,7 @@ function App() {
 <ScrollAnimation>
 <Contact/>
 </ScrollAnimation>
-<ScrollAnimation>
 <Footer/>
-</ScrollAnimation>
 </div>
   );
 }

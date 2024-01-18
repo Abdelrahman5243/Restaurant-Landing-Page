@@ -18,10 +18,7 @@ const ScrollAnimation = ({ children }) => {
       if (isElementInViewport(sectionRef.current)) {
         sectionRef.current.style.opacity = '1';
         sectionRef.current.style.transform = 'translateY(0)';
-      } else {
-        sectionRef.current.style.opacity = '0';
-        sectionRef.current.style.transform = 'translateY(20px)';
-      }
+      } 
     }
 
     window.addEventListener('scroll', handleScroll);
