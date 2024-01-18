@@ -20,15 +20,16 @@ import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
-    {
-      text: "Works",
-      icon: <HomeRepairServiceIcon />,
-      href:"#Works"
-    },
+
     {
       text: "About",
       icon: <InfoIcon />,
       href:"#About"
+    },
+    {
+      text: "Works",
+      icon: <HomeRepairServiceIcon />,
+      href:"#Works"
     },
     {
       text: "Testimonials",
