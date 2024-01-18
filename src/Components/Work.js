@@ -4,25 +4,22 @@ import ChooseMeals from "../Assets/choose-image.png";
 import DeliveryMeals from "../Assets/delivery-image.png";
 
 const Work = () => {
+  
   const workSectionRef = useRef();
 
-  function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top < window.innerHeight && rect.top >= 0
-    );
-  }
-  
-
   useEffect(() => {
-    function handleScroll() {
-      if (isElementInViewport(workSectionRef.current)) {
-        workSectionRef.current.style.opacity = '1';
-      }
-    }
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+        } else {
+          entry.target.style.opacity = '0';
+        }
+      });
+    });
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    observer.observe(workSectionRef.current);
+    return () => observer.unobserve(workSectionRef.current);
   }, []);
 
     
