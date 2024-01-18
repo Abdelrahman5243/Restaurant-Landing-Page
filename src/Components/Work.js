@@ -12,8 +12,10 @@ const Work = () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0px)';
         } else {
           entry.target.style.opacity = '0';
+          entry.target.style.transform = 'translateY(-15px)';
         }
       });
     });
