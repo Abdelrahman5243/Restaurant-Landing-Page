@@ -4,6 +4,26 @@ import ChooseMeals from "../Assets/choose-image.png";
 import DeliveryMeals from "../Assets/delivery-image.png";
 
 const Work = () => {
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+  
+  window.addEventListener('scroll', function() {
+    const workSection = document.getElementById('Works');
+    if (isElementInViewport(workSection)) {
+      workSection.style.opacity = '1';
+    } else {
+      workSection.style.opacity = '0';
+    }
+  });
+    
+
   const workInfoData = [
     {
       image: PickMeals,
