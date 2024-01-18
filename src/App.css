@@ -100,6 +100,7 @@ nav {
   max-width: 500px;
   color: #6a6a6a;
   margin: 1.5rem 0rem;
+  mix-blend-mode: multiply;
 }
 .secondary-button {
   padding: 1rem 2.5rem;
