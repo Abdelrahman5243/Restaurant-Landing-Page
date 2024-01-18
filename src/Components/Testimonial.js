@@ -13,7 +13,7 @@ const Testimonial = () => {
         who’ve experienced the magic of our kitchen.         </p>
       </div>
       <div className="testimonial-section-bottom">
-        <img src={ProfilePic} alt="" />
+        <img loading="lazy" src={ProfilePic} alt="" />
         <p>
         Their stories are a testament to our dedication to culinary excellence and service.        </p>
         <div className="testimonials-stars-container">

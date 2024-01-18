@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-logo-container">
-        <img src={Logo} alt="" />
+        <img loading="lazy" src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
         <a href="#About">About</a>
