@@ -2,8 +2,11 @@ import React from "react";
 import PickMeals from "../Assets/pick-meals-image.png";
 import ChooseMeals from "../Assets/choose-image.png";
 import DeliveryMeals from "../Assets/delivery-image.png";
+import React, { useEffect, useRef } from 'react';
 
 const Work = () => {
+  const workSectionRef = useRef();
+
   function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -13,13 +16,18 @@ const Work = () => {
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
-  
-  window.addEventListener('scroll', function() {
-    const workSection = document.getElementById('Works');
-    if (isElementInViewport(workSection)) {
-      workSection.style.opacity = '1';
-    } 
-  });
+
+  useEffect(() => {
+    function handleScroll() {
+      if (isElementInViewport(workSectionRef.current)) {
+        workSectionRef.current.style.opacity = '1';
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
     
 
   const workInfoData = [
@@ -40,7 +48,7 @@ const Work = () => {
     },
   ];
   return (
-    <div className="work-section-wrapper" id="Works">
+    <div className="work-section-wrapper" ref={workSectionRef}  id="Works">
       <div className="work-section-top">
         <p className="primary-subheading">Work</p>
         <h1 className="primary-heading">How It Works</h1>
