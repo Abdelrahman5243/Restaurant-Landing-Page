@@ -17,7 +17,7 @@ img {
   max-width: 1900px;
   margin: 0rem auto;
 }
-@media (max-width:1199px) {
+@media (max-width:787px) {
   #root{
     overflow: hidden;
   }  
