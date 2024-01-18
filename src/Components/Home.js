@@ -14,7 +14,7 @@ const Home = () => {
         <div className="home-bannerImage-container">
           <img src={BannerBackground} alt="" />
         </div>
-        <div className="home-text-section">
+        <div className="home-text-section animated-section">
           <h1 className="primary-heading">
             Your Favourite Food Delivered Hot & Fresh
           </h1>

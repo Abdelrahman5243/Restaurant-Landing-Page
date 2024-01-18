@@ -1,28 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import PickMeals from "../Assets/pick-meals-image.png";
 import ChooseMeals from "../Assets/choose-image.png";
 import DeliveryMeals from "../Assets/delivery-image.png";
 
 const Work = () => {
-  
-  const workSectionRef = useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-        } else {
-          entry.target.style.opacity = '0';
-        }
-      });
-    });
-
-    observer.observe(workSectionRef.current);
-    return () => observer.unobserve(workSectionRef.current);
-  }, []);
-
-    
 
   const workInfoData = [
     {
@@ -42,7 +23,7 @@ const Work = () => {
     },
   ];
   return (
-    <div className="work-section-wrapper" ref={workSectionRef}  id="Works">
+    <div className="work-section-wrapper animated-section" id="Works">
       <div className="work-section-top">
         <p className="primary-subheading">Work</p>
         <h1 className="primary-heading">How It Works</h1>

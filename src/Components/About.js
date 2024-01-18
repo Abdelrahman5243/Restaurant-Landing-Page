@@ -12,7 +12,7 @@ const About = () => {
       <div className="about-section-image-container">
         <img src={AboutBackgroundImage} alt="" />
       </div>
-      <div className="about-section-text-container">
+      <div className="about-section-text-container animated-section">
         <p className="primary-subheading">About</p>
         <h1 className="primary-heading">
           Food Is An Important Part Of A Balanced Diet
