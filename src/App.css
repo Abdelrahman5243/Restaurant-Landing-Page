@@ -17,11 +17,13 @@ img {
   max-width: 1900px;
   margin: 0rem auto;
 }
-@media (max-width:767px) {
+.home-bannerImage-container,
+.about-background-image-container{
+width: 600px !important;
+}
   #root {
     overflow: hidden;
   }  
-}
 @media (min-width:1200px) {
   .home-bannerImage-container,
   .about-background-image-container{
